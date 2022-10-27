@@ -1,0 +1,52 @@
+.container {
+  padding: 10px;
+}
+
+.create-note-area {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 10px;
+}
+
+#create-note {
+  font-size: 1rem;
+  padding: 15px;
+  width: 40%;
+  height: 100%;
+  color: #e9e9e9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px rgba(14, 15, 16, 0.92);
+  border: 1px solid #525355;
+  overflow-y: hidden;
+  resize: none;
+}
+
+#create-note::placeholder {
+  font-weight: bold;
+  color: #bcbdbe;
+}
+
+#create-note:focus {
+  outline: none;
+}
+
+#create-note:focus::placeholder {
+  color: transparent;
+}
+
+#addNoteBtn {
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 5px 10px 5px 10px;
+  background-color: #12a689;
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#addNoteBtn:hover {
+  background: #0d7761;
+}

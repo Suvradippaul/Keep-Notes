@@ -1,0 +1,25 @@
+.note {
+  /* background: #16504b; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 500px;
+  font-family: "Expose", sans-serif;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  white-space: pre-wrap;
+  /* border: 1px solid red; */
+}
+
+.content-box {
+  background: transparent;
+  width: 100%;
+}
+
+.delete-icon {
+  cursor: pointer;
+  background: transparent;
+}
