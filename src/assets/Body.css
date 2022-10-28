@@ -12,6 +12,7 @@
 
 #create-note {
   font-size: 1rem;
+  letter-spacing: 0.9px;
   padding: 15px;
   width: 40%;
   height: 100%;
@@ -39,6 +40,7 @@
 #addNoteBtn {
   cursor: pointer;
   font-size: 0.9rem;
+  letter-spacing: 0.9px;
   padding: 5px 10px 5px 10px;
   background-color: #12a689;
   border-radius: 20px;

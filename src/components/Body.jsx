@@ -52,6 +52,20 @@ const Body = ({ searchText }) => {
     updateNotes(filteredNotes);
   };
 
+  const handleEdit = (id, textValue) => {
+    const newNotes = [];
+    for (let i = 0; i < notes.length; i++) {
+      if (notes[i].key == id) {
+        const newObj = notes[i];
+        newObj.content = textValue;
+        newNotes.push(newObj);
+      } else {
+        newNotes.push(notes[i]);
+      }
+    }
+    updateNotes(newNotes);
+  };
+
   return (
     <div className="container">
       <div className="create-note-area">
@@ -71,6 +85,7 @@ const Body = ({ searchText }) => {
             note.content.toLowerCase().includes(searchText)
           )}
           handleDelete={deleteNote}
+          handleEdit={handleEdit}
         ></NotesList>
       )}
     </div>
