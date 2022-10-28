@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../assets/Body.css";
 import { nanoid } from "nanoid";
 import NotesList from "./NotesList";
@@ -19,6 +19,17 @@ const Body = ({ searchText }) => {
   const [notes, updateNotes] = useState([]);
   const [content, setContent] = useState("");
 
+  useEffect(() => {
+    const localData = JSON.parse(window.localStorage.getItem("data"));
+    if (localData) {
+      updateNotes(localData);
+    }
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem("data", JSON.stringify(notes));
+  }, [notes]);
+
   const handleChange = (event) => {
     setContent(event.target.value);
   };
@@ -30,8 +41,8 @@ const Body = ({ searchText }) => {
     if (content.trim().length > 0) {
       const randomColor = colorGenerator();
       const newNote = { key: nanoid(), content: content, color: randomColor };
-      notes.push(newNote);
-      updateNotes(notes);
+      const newNotes = [...notes, newNote];
+      updateNotes(newNotes);
       setContent("");
     }
   };
