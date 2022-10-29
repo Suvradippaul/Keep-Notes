@@ -1,5 +1,5 @@
 import Note from "./Note";
-import "../assets/NotesList.css";
+import "../assets/css/NotesList.css";
 
 const NotesList = ({ notes, handleDelete, handleEdit }) => {
   return (

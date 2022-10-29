@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../assets/Body.css";
+import "../assets/css/Body.css";
 import { nanoid } from "nanoid";
 import NotesList from "./NotesList";
 

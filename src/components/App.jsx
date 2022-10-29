@@ -1,4 +1,4 @@
-import "../assets/App.css";
+import "../assets/css/App.css";
 import Header from "./Header";
 import Body from "./Body";
 import { useState } from "react";

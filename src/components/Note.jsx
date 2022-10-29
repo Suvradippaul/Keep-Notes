@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../assets/Note.css";
+import "../assets/css/Note.css";
 import TextareaAutosize from "react-textarea-autosize";
 import DeleteRoundedIcon from "@mui/icons-material/DeleteRounded";
 import EditRoundedIcon from "@mui/icons-material/EditRounded";
