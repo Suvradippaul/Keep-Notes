@@ -1,6 +1,6 @@
 - [X] Add a delete icon
 - [X] Save to local storage
-- [ ] Add an edit icon
+- [X] Add an edit icon
 - [X] Search for a note.
 - [X] [BUG] New line is not created when note contains more than 1 line.
 - [X] Random colors for note
