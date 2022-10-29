@@ -37,8 +37,8 @@
 
 .icons {
   display: flex;
-  width: 20%;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: flex-end;
   background: transparent;
   margin-top: 10px;
   visibility: hidden;
@@ -50,6 +50,7 @@
 .save-icon {
   cursor: pointer;
   background: transparent;
+  margin: 0 5px 0 5px;
 }
 
 .delete-icon:hover,
