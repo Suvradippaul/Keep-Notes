@@ -24,7 +24,8 @@
 
 .content-area {
   background: transparent;
-  font-family: "Expose", sans-serif;
+  /* font-family: "Expose", sans-serif; */
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
   resize: none;
