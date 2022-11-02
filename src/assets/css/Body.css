@@ -39,16 +39,18 @@
 
 #addNoteBtn {
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 0.9px;
-  padding: 5px 10px 5px 10px;
-  background-color: #12a689;
-  border-radius: 20px;
+  padding: 7px 13px 7px 13px;
+  background-color: rgba(129, 230, 217, 1);
+  color: rgba(26, 32, 44, 1);
+  font-weight: 500;
+  border-radius: 8px;
   border: none;
   margin-left: 10px;
   transition: background-color 0.2s ease-in-out;
 }
 
 #addNoteBtn:hover {
-  background: #0d7761;
+  background: rgba(79, 209, 197, 1);
 }
