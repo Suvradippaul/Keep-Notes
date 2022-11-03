@@ -72,13 +72,14 @@ const Body = ({ searchText }) => {
         <textarea
           value={content}
           onChange={handleChange}
-          placeholder="✍🏼Take a note..."
+          placeholder="Write a note..."
           id="create-note"
         ></textarea>
         <button type="" onClick={addNote} id="addNoteBtn">
           Save
         </button>
       </div>
+      {notes.length == 0 && <div className="no-notes">No notes to show</div>}
       {notes.length > 0 && (
         <NotesList
           notes={notes.filter((note) =>

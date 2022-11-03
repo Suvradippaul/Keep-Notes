@@ -2,6 +2,12 @@
   padding: 10px;
 }
 
+.no-notes {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .create-note-area {
   /* border: 1px solid red; */
   display: flex;
