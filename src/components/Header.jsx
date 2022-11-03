@@ -7,7 +7,12 @@ const Header = ({ handleSearch }) => {
     <div className="header">
       <div className="logo-area">
         Keep Notes
-        <img src={Icon} style={{ width: "30px", height: "30px" }} id="icon" />
+        <img
+          src={Icon}
+          alt="Logo"
+          style={{ width: "30px", height: "30px" }}
+          id="icon"
+        />
       </div>
       <div className="search-area">
         <SearchIcon id="search-icon"></SearchIcon>
